@@ -11,12 +11,20 @@ tess.pytesseract.tesseract_cmd = r'C:\Users\nolha\AppData\Local\Programs\Tessera
 #install poppler: https://stackoverflow.com/questions/18381713/how-to-install-poppler-on-windows
 #install pytesseract: https://github.com/tesseract-ocr/tesseract
 
-
 actual_path = Path.cwd()
 work_path = WindowsPath(str(actual_path) + '\work')
 Output_path = WindowsPath(str(work_path) + '\Output')
 Input_path = WindowsPath(str(work_path) + '\Input')
 Temp_path = WindowsPath(str(work_path) + '\Temp')
+
+if not os.path.exists(str(work_path)):
+    os.makedirs(str(work_path))
+
+if not os.path.exists(str(Input_path)):
+    os.makedirs(str(Input_path))
+
+if not os.path.exists(str(Output_path)):
+    os.makedirs(str(Output_path))
 
 all_pdf = list(Input_path.glob('*.pdf'))
 
