@@ -11,6 +11,6 @@ git push -u ESCENSI 'branch name'
 
 
 git checkout -b 'branch_name'.
-git add .
+git add .      git add -A 
 git commit -m 'message'
 git push -u ESCENSI 'branch name'
