@@ -1,0 +1,16 @@
+git config --global user.email "ncheups@gmail.com"
+git config --global user.name "ncheups"
+
+cd in repo
+git init
+git status
+git add .
+git commit -m 'message'
+git remote add ESCENSI 'https://github.com/Ncheups/ESCENSI.git'
+git push -u ESCENSI 'branch name'
+
+
+git checkout -b 'branch_name'.
+git add .
+git commit -m 'message'
+git push -u ESCENSI 'branch name'

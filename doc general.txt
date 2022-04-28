@@ -1,0 +1,5 @@
+py -m venv NAME
+
+
+alias MyAlias File.NewFile MyFile.txt
+alias <alias name> /delete
